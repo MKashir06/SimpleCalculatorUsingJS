@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator with JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/cf29be50d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Simple Calculator:</h1>
+        <div class="main">
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="resultShow" class="resultShow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <button type="button" class="btn btn-light btn-lg clearBtn" onclick="clearNumValue()">C</button>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <button type="button" class="btn btn-light btn-lg backspaceBtn" onclick="backSpace()"><i class="fas fa-backspace"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('7')">7</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('8')">8</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('9')">9</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('*')"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('4')">4</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('5')">5</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('6')">6</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('-')"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('1')">1</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('2')">2</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('3')">3</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('+')"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="row aligning">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('.')">.</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('0')">0</button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getResult()"><i class="fas fa-equals"></i></button>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <button type="button" class="btn btn-light" onclick="getNumValue('/')"><i class="fas fa-divide"></i></button>
+                </div>
+            </div>
+            <div class="madeBy">
+                <h6>Made By: Muhammad Kashir</h6>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
